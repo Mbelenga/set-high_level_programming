@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 str = "Elmwood Institute"
-print(3 * str)
-print(str[0:9])
+print(str * 3)
+print(str[:9])
