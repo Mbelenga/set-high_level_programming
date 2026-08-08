@@ -1,15 +1,27 @@
 #!/usr/bin/python3
+
+"""
+The module is add_interger
+It adds two intergers together
+"""
+
+
 def add_integer(a, b=98):
+    """
+    Returns the addition of a and b
+    Args:
+        a(int, float) the first value
+        b(int, float) the second value
+    """
 
-	"""Return integer addition of a and b
+    if type(a) is not int and type(a) is not float:
+        raise TypeError("a must be an integer")
+    if type(b) is not int and type(b) is not float:
+        raise TypeError("b must be an integer")
 
-	if float a and b must first be casted to integer
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
 
-	if not integer or non-float :TypeEror.
-	"""
-
-	if ((not isinstance (a, int) and not isinstance (b, float))):
-		raise TypeError ("a must be an integer")
-	if ((not isinstance (b, int) and not isinstance (b, float))):
-		raise TypeError ("b must be an integer")
-	return (int(a) + int(b))
+    return a + b
