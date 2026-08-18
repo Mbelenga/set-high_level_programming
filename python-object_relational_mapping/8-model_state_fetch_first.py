@@ -1,7 +1,7 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 
 """
-A script that prints the first state object from the database
+Module that connects python script to a database
 """
 from sys import argv
 from sqlalchemy import create_engine
